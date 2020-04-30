@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<html lang="" xml:lang="">
   <head>
-    <title>Rladies ninja presentation</title>
+    <title>Presentación Rladies ninja</title>
     <meta charset="utf-8" />
-    <meta name="author" content="  Paula Andrea Martinez  <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;@orchid00</span>" />
+    <meta name="author" content="Paula Andrea Martinez @orchid00" />
     <link href="Kunoichi_files/remark-css/kunoichi.css" rel="stylesheet" />
     <link href="Kunoichi_files/remark-css/ninjutsu.css" rel="stylesheet" />
     <link href="Kunoichi_files/remark-css/rladies-fonts.css" rel="stylesheet" />
@@ -23,10 +23,10 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Rladies ninja presentation
-## ⚔<br/>with Xaringan and Kunoichi
-### <br><br>Paula Andrea Martinez  <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;@orchid00</span>
-### 2019-08-19 (updated: 2019-08-22)
+# Presentación Rladies ninja
+## ⚔<br/>usando Xaringan y Kunoichi
+### Paula Andrea Martinez <span class="citation">@orchid00</span>
+### 2019-08-19 (updated: 2020-05-01)
 
 ---
 
@@ -42,21 +42,26 @@ background-position: 90% 8%
 # Sharingan
 
 &lt;br&gt;
-The R package name **xaringan** was derived from **Sharingan**, a dōjutsu in the Japanese anime _Naruto_ 
+El paquete R **xaringan** viene del dōjutsu japonés **Sharingan**, del anime _Naruto_ 
 
-with two abilities:
+con dos habilities:
 
 --
 
-- the "Eye of Insight"
+- El ojo visionario
 
-- the "Eye of Hypnotism"
+- El ojo del hipnotismo
 
 --
 
 &lt;br&gt;
 
-"I think a presentation is basically a way to communicate insights to the audience, and a great presentation may even "hypnotize" the audience." - by Yihui Xie.
+" Creo que una presentación es una manera de presentar ideas
+a una audiencia, y una gran presentación puede que llegue a
+hipnotizar a la audiencia" - Yihui Xie*
+
+
+*(Desarrollador de Xaringan y otros packetes de R).
 
 ---
 
@@ -68,7 +73,7 @@ class: middle center bg-main1
 # 女
 
 --
-## The Japanese word for female ninja
+## Es la palabra japonesa para una mujer ninja
 
 --
 
@@ -78,21 +83,21 @@ class: middle center bg-main1
 
 class: middle 
 
-## Now Kunoichi is a theme of latest version of `xaringan`
+## Kunoichi es un [theme] de `xaringan`
 
 
 ---
 
 class: inverse, center, middle bg-main1
 
-# Get Started
+# Empecemos
 
 ---
 
-# Let's do this together 
+# Cómo hacerlo juntas 
 
 &lt;br&gt;
-Install the **xaringan** package from **GitHub** 
+Instala el paquete **xaringan** desde **GitHub** 
 <span>&lt;i class="fab  fa-github faa-float animated "&gt;&lt;/i&gt;@yihui</span>
 [https://github.com/yihui/xaringan](https://github.com/yihui/xaringan)
   
@@ -102,7 +107,7 @@ Install the **xaringan** package from **GitHub**
 devtools::install_github("yihui/xaringan")
 ```
 &lt;br&gt;&lt;br&gt;
-Thank you **Yihui Xie**
+Gracias **Yihui Xie**
 <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;@xieyihui</span>
 &lt;br&gt;
 [https://twitter.com/xieyihui](https://twitter.com/xieyihui)
@@ -113,18 +118,18 @@ class: split-three
 
 .row.bg-white[.content[
 
-# Create a new R markdown file
+# Crea un nuevo Proyecto y un nuevo R markdown
 
-  You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/).
+  En [RStudio IDE](https://www.rstudio.com/products/rstudio/).
 
 ```
       1. New Project
-      2. From the menu: File &gt; New File &gt; R Markdown &gt; Template &gt; From Template &gt; Ninja presentation
+      2. From the menu: File &gt; New File &gt; R Markdown &gt; From Template &gt; Ninja presentation
 ```      
 
 ]]
 .row.bg-gray100[.content[
-### then add/modify the YAML
+### luego modificamos la cabecera YAML
 
 ```
       output:
@@ -134,48 +139,44 @@ class: split-three
 ]]
 .row.bg-main1[.content[
 &lt;br&gt;
-Thank you **Emi Tanaka** 
+Gracias **Emi Tanaka** 
 <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;@statsgen</span><span>&lt;i class="fab  fa-github faa-float animated "&gt;&lt;/i&gt;emitanaka</span>
 &lt;br&gt;
 &lt;br&gt;
-Thank you **Alison Hill** 
+Gracias **Alison Hill** 
 <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;@apreshill</span><span>&lt;i class="fab  fa-github faa-float animated "&gt;&lt;/i&gt;@apreshill</span>
 ]]
 
 ---
 class: middle center bg-main1
 
-# YAY!! 
-## that's pretty much it!
+# y listo!! 
+## eso es todo!
 
 
 &lt;img src="https://emitanaka.org/ninja-theme/themes/kunoichi/images/kunoichi.svg" width="20%"&gt;
 
 ---
-## To see results
+## Para ver los resultados
 &lt;br&gt;
-- Click the **Knit** button to compile it; in other words to generate the HTML from Markdown.
+- Apreta el botton **Knit** para compilar; eso significa que del R markdown R genera un archivo HTML.
 
 &lt;br&gt;
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/) "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-With this option it is recomended to use 
-&lt;br&gt;
-` r options(servr.daemon = TRUE)`
-&lt;br&gt;
-To avoid locking up your console while compiling. I added this to the Rmd.
+- o usa ` r xaringan::inf_mr()` "Infinite Moon Reader" 
+para ver cambios en tiempo real en el RStudio Viewer.
 
 ---
 
-# Other recommended reading 
+# Otros enlaces interesantes  
 
 
-1. The [remark.js](https://remarkjs.com) library; a simple, in-browser, Markdown-driven slideshow tool.
+1. La librería [remark.js](https://remarkjs.com) se usa detras de la cortina para producir estas presentaciones.
 
-1. The [**xaringan**](https://github.com/yihui/xaringan) package to create R markdown presentations, from Yihui Xie.
+1. El paquete de  [**xaringan**](https://github.com/yihui/xaringan) fue desarrollado por [Yihui Xie](https://yihui.org/en/) para hacer presentaciones. Te invito a su sitio web para aprender de sus otros paquetes (knitr, animation, bookdown, blogdown, pagedown, xaringan, y tinytex).
 
-1. The [**kunoichi**](https://github.com/emitanaka/ninja-theme) theme to add R-ladies flavour to your presentation, from Emi Tanaka.
+1. El theme de [**kunoichi**](https://github.com/emitanaka/ninja-theme) de Emi Tanaka. le agrega funcionalida al theme the R-ladies. 
 
-1. [Rladies theme and fonts](https://alison.rbind.io/post/2017-12-18-r-ladies-presentation-ninja/) from Alison Hill.
+1. [el theme de Rladies y las fuentes](https://alison.rbind.io/post/2017-12-18-r-ladies-presentation-ninja/) son de Alison Hill.
 
 ---
 class: middle center bg-main1
@@ -198,7 +199,7 @@ class: split-two white
 <span>&lt;i class="fab  fa-twitter faa-float animated "&gt;&lt;/i&gt;dcossyle</span>
 <span>&lt;i class="fab  fa-github faa-float animated "&gt;&lt;/i&gt;dcossyleon</span>
 &lt;br&gt;
-* look for cute giraffes
+* Jirafas chiquititas!!!
 &lt;br&gt;
 [https://tinystats.github.io/teacups-giraffes-and-statistics/index.html](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html)
 ]]
@@ -215,52 +216,52 @@ class: middle center
 
 ---
 
-# Tables
+# Tablas
 
-If you want to generate a table, you can do something like this:
+Si quieres generar tablas, te recomiendo el paquete DT:
 
-### R-Ladies Brisbane events so far
+### Los eventos de R-Ladies La Paz 
 
 
 ```r
 DT::datatable(events[,c(1,2,6,7)], fillContainer = FALSE)
 ```
 
-<div id="htmlwidget-019007757629823d9aec" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-019007757629823d9aec">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5"],[257271224,259785109,261250153,262437333,263640982],["End of year party","R and RStudio Introductory Workshop","R-Ladies Brisbane Networking","Shiny Apps, building a R user community and Web Scraping using R!","R-Ladies Brisbane August meetup, Rmarkdown, Creating Packages and more!"],["2018-12-20","2019-03-27","2019-05-21","2019-07-02","2019-08-21"],["17:30","17:30","18:00","18:00","17:45"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>id<\/th>\n      <th>name<\/th>\n      <th>local_date<\/th>\n      <th>local_time<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":1},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e5a8778c4c648740ab25" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e5a8778c4c648740ab25">{"x":{"filter":"none","fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9"],[255820271,259318768,267768882,269677865,269801211,269960308,270099253,270212766,270291866],["2018-10-25","2019-02-27","2020-01-09","2020-03-27","2020-04-02","2020-04-10","2020-04-17","2020-04-23","2020-04-27"],[17,9,9,28,12,11,8,8,11],["Fri","Sat","Tue","Tue","Sat","Sat","Sat","Sat","Thu"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>id<\/th>\n      <th>created_date<\/th>\n      <th>yes_rsvp_count<\/th>\n      <th>day_event<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,3]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
 
 class: middle center
 
-&lt;img src="images/RSVP_RladiesBrisbane.png"&gt;
+&lt;img src="images/RSVP_RladiesLaPaz.png" width="65%" /&gt;
 
-See `scripts/01_rladiesBrisbane.R`
+See `scripts/01_rladiesMeetup.R`
 ---
 
 
 class: middle center
 
-&lt;img src="images/MembersJoined.png"&gt;
+&lt;img src="images/members_RladiesLaPaz.png" width="65%" /&gt;
 
-See `scripts/01_rladiesBrisbane.R`
+See `scripts/01_rladiesMeetup.R`
 ---
 
 class: middle center bg-main1
 
 
-# Thanks!
+# Muchas gracias por su atención!
 
-Slides created via the R package **xaringan** [https://github.com/yihui/xaringan](https://github.com/yihui/xaringan)
+La presentación a sido creada con el paquete de R **xaringan** [https://github.com/yihui/xaringan](https://github.com/yihui/xaringan)
 &lt;br&gt;
-and the theme **Kunichio** [https://github.com/emitanaka/ninja-theme](https://github.com/emitanaka/ninja-theme).
+usando el theme **Kunoichi** [https://github.com/emitanaka/ninja-theme](https://github.com/emitanaka/ninja-theme).
 &lt;br&gt;&lt;br&gt;
-Jumping emogies optional from **anicon** 
+Los emojies son opcionales usando el paquete **anicon** 
 [https://github.com/emitanaka/anicon](https://github.com/emitanaka/anicon).
 &lt;br&gt;&lt;br&gt;
-Xaringan uses **remark.js** [https://remarkjs.com](https://remarkjs.com), **knitr**[http://yihui.name/knitr](http://yihui.name/knitr), and R Markdown [https://rmarkdown.rstudio.com](https://rmarkdown.rstudio.com).
+Recuerda que Xaringan usa **remark.js** [https://remarkjs.com](https://remarkjs.com), **knitr** [http://yihui.name/knitr](http://yihui.name/knitr), y R Markdown [https://rmarkdown.rstudio.com](https://rmarkdown.rstudio.com).
 &lt;br&gt;&lt;br&gt;
-I've used a lot of data wrangling and googling, and was inspired by many **RLadies** .
+Para esta presentación y los datos del grupo use el paquete meetupr mucho googling, y mucha inspiración de **RLadies**.
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
@@ -308,9 +309,25 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
     deleted = true;
   });
-})();</script>
-
-<script>
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
 (function() {
   var links = document.getElementsByTagName('a');
   for (var i = 0; i < links.length; i++) {
@@ -319,7 +336,23 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     }
   }
 })();
-</script>
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
 
 <script>
 slideshow._releaseMath = function(el) {

@@ -1,7 +1,7 @@
 ---
-title: "Rladies ninja presentation"
-subtitle: "⚔<br/>with Xaringan and Kunoichi"
-author: "<br><br>Paula Andrea Martinez &nbsp;`r anicon::faa('twitter', animate='float', rtext='@orchid00')`"
+title: "Presentación Rladies ninja"
+subtitle: "⚔<br/>usando Xaringan y Kunoichi"
+author: "Paula Andrea Martinez @orchid00"
 date: "2019-08-19 (updated: `r Sys.Date()`)"
 output:
   xaringan::moon_reader:
@@ -28,21 +28,26 @@ background-position: 90% 8%
 # Sharingan
 
 <br>
-The R package name **xaringan** was derived from **Sharingan**, a dōjutsu in the Japanese anime _Naruto_ 
+El paquete R **xaringan** viene del dōjutsu japonés **Sharingan**, del anime _Naruto_ 
 
-with two abilities:
+con dos habilities:
 
 --
 
-- the "Eye of Insight"
+- El ojo visionario
 
-- the "Eye of Hypnotism"
+- El ojo del hipnotismo
 
 --
 
 <br>
 
-"I think a presentation is basically a way to communicate insights to the audience, and a great presentation may even "hypnotize" the audience." - by Yihui Xie.
+" Creo que una presentación es una manera de presentar ideas
+a una audiencia, y una gran presentación puede que llegue a
+hipnotizar a la audiencia" - Yihui Xie*
+
+
+*(Desarrollador de Xaringan y otros packetes de R).
 
 ---
 
@@ -54,7 +59,7 @@ class: middle center bg-main1
 # 女
 
 --
-## The Japanese word for female ninja
+## Es la palabra japonesa para una mujer ninja
 
 --
 
@@ -64,21 +69,21 @@ class: middle center bg-main1
 
 class: middle 
 
-## Now Kunoichi is a theme of latest version of `xaringan`
+## Kunoichi es un [theme] de `xaringan`
 
 
 ---
 
 class: inverse, center, middle bg-main1
 
-# Get Started
+# Empecemos
 
 ---
 
-# Let's do this together 
+# Cómo hacerlo juntas 
 
 <br>
-Install the **xaringan** package from **GitHub** 
+Instala el paquete **xaringan** desde **GitHub** 
 ```{r echo=FALSE, eval=TRUE}
 anicon::faa('github', animate='float', rtext='@yihui')
 ```
@@ -89,7 +94,7 @@ anicon::faa('github', animate='float', rtext='@yihui')
 devtools::install_github("yihui/xaringan")
 ```
 <br><br>
-Thank you **Yihui Xie**
+Gracias **Yihui Xie**
 ```{r echo=FALSE, eval=TRUE}
 anicon::faa('twitter', animate='float', rtext='@xieyihui')
 ```
@@ -102,18 +107,18 @@ class: split-three
 
 .row.bg-white[.content[
 
-# Create a new R markdown file
+# Crea un nuevo Proyecto y un nuevo R markdown
 
-  You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/).
+  En [RStudio IDE](https://www.rstudio.com/products/rstudio/).
 
 ```
       1. New Project
-      2. From the menu: File > New File > R Markdown > Template > From Template > Ninja presentation
+      2. From the menu: File > New File > R Markdown > From Template > Ninja presentation
 ```      
 
 ]]
 .row.bg-gray100[.content[
-### then add/modify the YAML
+### luego modificamos la cabecera YAML
 
 ```
       output:
@@ -123,7 +128,7 @@ class: split-three
 ]]
 .row.bg-main1[.content[
 <br>
-Thank you **Emi Tanaka** 
+Gracias **Emi Tanaka** 
 ```{r echo=FALSE, eval=TRUE}
 anicon::faa('twitter', animate='float', rtext='@statsgen')
 
@@ -131,7 +136,7 @@ anicon::faa('github', animate='float', rtext='emitanaka')
 ```
 <br>
 <br>
-Thank you **Alison Hill** 
+Gracias **Alison Hill** 
 ```{r echo=FALSE, eval=TRUE}
 anicon::faa('twitter', animate='float', rtext='@apreshill')
 anicon::faa('github', animate='float', rtext='@apreshill')
@@ -141,37 +146,33 @@ anicon::faa('github', animate='float', rtext='@apreshill')
 ---
 class: middle center bg-main1
 
-# YAY!! 
-## that's pretty much it!
+# y listo!! 
+## eso es todo!
 
 
 <img src="https://emitanaka.org/ninja-theme/themes/kunoichi/images/kunoichi.svg" width="20%">
 
 ---
-## To see results
+## Para ver los resultados
 <br>
-- Click the **Knit** button to compile it; in other words to generate the HTML from Markdown.
+- Apreta el botton **Knit** para compilar; eso significa que del R markdown R genera un archivo HTML.
 
 <br>
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/) "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-With this option it is recomended to use 
-<br>
-` r options(servr.daemon = TRUE)`
-<br>
-To avoid locking up your console while compiling. I added this to the Rmd.
+- o usa ` r xaringan::inf_mr()` "Infinite Moon Reader" 
+para ver cambios en tiempo real en el RStudio Viewer.
 
 ---
 
-# Other recommended reading 
+# Otros enlaces interesantes  
 
 
-1. The [remark.js](https://remarkjs.com) library; a simple, in-browser, Markdown-driven slideshow tool.
+1. La librería [remark.js](https://remarkjs.com) se usa detras de la cortina para producir estas presentaciones.
 
-1. The [**xaringan**](https://github.com/yihui/xaringan) package to create R markdown presentations, from Yihui Xie.
+1. El paquete de  [**xaringan**](https://github.com/yihui/xaringan) fue desarrollado por [Yihui Xie](https://yihui.org/en/) para hacer presentaciones. Te invito a su sitio web para aprender de sus otros paquetes (knitr, animation, bookdown, blogdown, pagedown, xaringan, y tinytex).
 
-1. The [**kunoichi**](https://github.com/emitanaka/ninja-theme) theme to add R-ladies flavour to your presentation, from Emi Tanaka.
+1. El theme de [**kunoichi**](https://github.com/emitanaka/ninja-theme) de Emi Tanaka. le agrega funcionalida al theme the R-ladies. 
 
-1. [Rladies theme and fonts](https://alison.rbind.io/post/2017-12-18-r-ladies-presentation-ninja/) from Alison Hill.
+1. [el theme de Rladies y las fuentes](https://alison.rbind.io/post/2017-12-18-r-ladies-presentation-ninja/) son de Alison Hill.
 
 ---
 class: middle center bg-main1
@@ -200,7 +201,7 @@ anicon::faa('twitter', animate='float', rtext='dcossyle')
 anicon::faa('github', animate='float', rtext='dcossyleon')
 ```
 <br>
-* look for cute giraffes
+* Jirafas chiquititas!!!
 <br>
 [https://tinystats.github.io/teacups-giraffes-and-statistics/index.html](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html)
 ]]
@@ -219,13 +220,13 @@ anicon::faa('github', animate='float', rtext='allisonhorst')
 
 ---
 
-# Tables
+# Tablas
 
-If you want to generate a table, you can do something like this:
+Si quieres generar tablas, te recomiendo el paquete DT:
 ```{r echo=FALSE, eval=TRUE}
-events <- read.csv("data/events-rladies-brisbane.csv")
+events <- read.csv("data/events-rladies-la-paz.csv")
 ```
-### R-Ladies Brisbane events so far
+### Los eventos de R-Ladies La Paz 
 
 ```{r eval=require('DT')}
 DT::datatable(events[,c(1,2,6,7)], fillContainer = FALSE)
@@ -235,32 +236,36 @@ DT::datatable(events[,c(1,2,6,7)], fillContainer = FALSE)
 
 class: middle center
 
-<img src="images/RSVP_RladiesBrisbane.png">
+```{r, out.width='65%', echo=FALSE}
+knitr::include_graphics("images/RSVP_RladiesLaPaz.png")
+```
 
-See `scripts/01_rladiesBrisbane.R`
+See `scripts/01_rladiesMeetup.R`
 ---
 
 
 class: middle center
 
-<img src="images/MembersJoined.png">
+```{r, out.width='65%', echo=FALSE}
+knitr::include_graphics("images/members_RladiesLaPaz.png")
+```
 
-See `scripts/01_rladiesBrisbane.R`
+See `scripts/01_rladiesMeetup.R`
 ---
 
 class: middle center bg-main1
 
 
-# Thanks!
+# Muchas gracias por su atención!
 
-Slides created via the R package **xaringan** [https://github.com/yihui/xaringan](https://github.com/yihui/xaringan)
+La presentación a sido creada con el paquete de R **xaringan** [https://github.com/yihui/xaringan](https://github.com/yihui/xaringan)
 <br>
-and the theme **Kunichio** [https://github.com/emitanaka/ninja-theme](https://github.com/emitanaka/ninja-theme).
+usando el theme **Kunoichi** [https://github.com/emitanaka/ninja-theme](https://github.com/emitanaka/ninja-theme).
 <br><br>
-Jumping emogies optional from **anicon** 
+Los emojies son opcionales usando el paquete **anicon** 
 [https://github.com/emitanaka/anicon](https://github.com/emitanaka/anicon).
 <br><br>
-Xaringan uses **remark.js** [https://remarkjs.com](https://remarkjs.com), **knitr**[http://yihui.name/knitr](http://yihui.name/knitr), and R Markdown [https://rmarkdown.rstudio.com](https://rmarkdown.rstudio.com).
+Recuerda que Xaringan usa **remark.js** [https://remarkjs.com](https://remarkjs.com), **knitr** [http://yihui.name/knitr](http://yihui.name/knitr), y R Markdown [https://rmarkdown.rstudio.com](https://rmarkdown.rstudio.com).
 <br><br>
-I've used a lot of data wrangling and googling, and was inspired by many **RLadies** .
+Para esta presentación y los datos del grupo use el paquete meetupr mucho googling, y mucha inspiración de **RLadies**.
 
